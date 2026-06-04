@@ -27,17 +27,21 @@ h1 {
 }
 
 .photo-grid {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
 }
 
 .photo-grid img {
-    width: 180px;
-    height: 140px;
+    width: 100%;
+    height: 180px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.05);
 }
 
 .subtitle {
@@ -121,7 +125,7 @@ footer {
     </div>
 
     <div class="keywords">
-        cfDNA analysis | Methylation analysis | ONT | WGS pipelines | AWS cloud practictioner | genomics |
+        cfDNA analysis | Methylation analysis | ONT | WGS pipelines | AWS cloud practitioner | genomics |
         Molecular neurooncology | De-novo genome building | ARTEMIS-DELFI
     </div>
 
@@ -138,9 +142,23 @@ footer {
 <h2>About</h2>
 
 <div class="photo-grid">
-    <img src="images/grad.jpeg" alt="Graduation day">
-    <img src="images/research_sound.jpeg" alt="Grower visit through Sound Agriculture">
-</div>
+
+    <figure>
+        <img src="images/grad.jpeg" alt="Field visit">
+        <figcaption>Graduation day</figcaption>
+    </figure>
+    
+    <figure>
+        <img src="images/lab.jpeg" alt="Kayaking">
+        <figcaption>Taking a break from computation - Performing cfDNA extraction</figcaption>
+        </figure>
+    
+    <figure>
+        <img src="images/research_sound.jpeg" alt="Field visit">
+        <figcaption>Sound Agriculture field visit</figcaption>
+    </figure>
+    
+    </div>
 
 <p>
 Passionate about the dynamic intersection of life sciences and bioinformatics, I bring a fervent dedication to 
@@ -199,7 +217,7 @@ Bioinformatics Research Analyst (2024–Present)
 <ul>
 <li>Built and managed cfDNA pipelines (ARTEMIS-DELFI) that taps into cfDNA fragmentomics
     proving means for early and non-invasive detection of brain tumors </li>
-<li>Processed low depth illumina, ATAC-seq and Long read nanopore (ONT) data to aid in 
+<li>Processed low depth Illumina, ATAC-seq and Long read nanopore (ONT) data to aid in 
     brain tumor detection</li>
 <li>Integrated clinical biomarkers (Ki67, tumor burden, tumor size)</li>
 <li>Analyzing EM-seq cfDNA data to evaluate the impact of focused ultrasound (FUS)-mediated 
@@ -228,7 +246,7 @@ Staff Research Associate II (2020–2021)
 </li>
 <li>The project included 
     1. Cross sectional study : R.A patients vs Control 
-    2. Longtitudinal study : To track genes through different timepoints of the diease progression</li>
+    2. Longitudinal study : To track genes through different timepoints of the disease progression</li>
 <li>Abstract on the project was accepted at the American College of Rheumatology (ACR)</li>
 </ul>
 </div>
@@ -239,7 +257,7 @@ Research Intern (2019)
 <ul>
 <li>Single-cell RNA-seq analysis using Seurat in mice with myeloid Leukemia</li>
 <li>utilized ML models for classification of Glioblastoma from Controls</li>
-</li>Performed Differental expression analysis, Network analysis and WGCNA</li>
+<li>Performed Differential expression analysis, Network analysis and WGCNA</li>
 
 </ul>
 </div>
@@ -286,7 +304,7 @@ Transcriptomic biomarkers for rheumatoid arthritis progression
 <h2>Selected Projects</h2>
 
 <div class="card">
-<b>R package for ONT methylation analysis </b>
+<b>R package for ONT methylation analysis - </b>
 <a href="https://github.com/SoundAg/sounDMR"
    target="_blank">
    sounDMR
@@ -303,17 +321,42 @@ Transcriptomic biomarkers for rheumatoid arthritis progression
 
 </div>
 
-<!-- ===== CONTACT ===== -->
+<!-- ===== Hobbies ===== -->
 <div class="section">
-<h2>Contact</h2>
-<p>Email: your.email@example.com</p>
-<p>LinkedIn: <a href="https://www.linkedin.com/in/keerthananprabhu/">Profile</a></p>
+    <h2>Beyond the Lab</h2>
+    <p>A few things I enjoy outside research.</p>
+
+<div class="photo-grid">
+<h2>Beyond the Lab</h2>
+<p>A few things I enjoy outside research</p>
+    <figure>
+        <img src="images/sing.jpeg" alt="Field visit">
+        <figcaption>Concert at Northeastern University</figcaption>
+    </figure>
+
+    <figure>
+        <img src="images/kayak2.jpeg" alt="Kayaking">
+        <figcaption>Kayaking</figcaption>
+    </figure>
+
+    <figure>
+        <img src="images/climb.jpeg" alt="Field visit">
+        <figcaption>Bouldering</figcaption>
+    </figure>
+
+    <figure>
+        <img src="images/firefightng.jpeg" alt="Field visit">
+        <figcaption>All women firefighters camp May '25</figcaption>
+    </figure>
+
+    </div>
+    
 </div>
 
-</div>
+
 
 <footer>
-Built for bioinformatics recruitment visibility • GitHub Pages friendly
+Built for recruitment visibility • GitHub Pages friendly
 </footer>
 
 </body>
