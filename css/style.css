@@ -130,10 +130,18 @@ body {
     }
     
     .life-grid img {
-        width: 100%;
-        height: 320px;
-        object-fit: cover;
+        width: 70%;
+        height: 420px;
+        object-fit: contain;
         object-position: center;
         border-radius: 17px;
         transition: transform 0.2s ease;
+    }
+
+    .indimg img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 17px;
     }
