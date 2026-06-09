@@ -99,10 +99,11 @@ body {
     
     .photo-grid img {
         width: 100%;
-        height: 260px;
-        object-fit: cover;
-        object-position: center;
+        height: auto;
+        max-height: 420px;
+        object-fit: contain;
         border-radius: 17px;
+        background: #111827;
         transition: transform 0.2s ease;
     }
 
